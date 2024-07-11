@@ -1,0 +1,99 @@
+/* src/PuzzlePage.css */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #333, #1e1e1e);
+  transition: background-color 0.5s;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header nav button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: #d4d4d4;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.header nav button:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.puzzle-container {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #555;
+  overflow-y: auto; /* Enable vertical scrollbar for puzzle content */
+}
+
+.puzzle-container .highlight {
+  color: #c586c0;
+}
+
+.puzzle-container pre {
+  background-color: #2d2d2d;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.puzzle-container code {
+  color: #d4d4d4;
+}
+
+.editor-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  border-top: 1px solid #555;
+}
+
+.footer button {
+  background: none;
+  border: none;
+  color: #d4d4d4;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer button:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.footer button:first-child {
+  margin-right: auto;
+}
+
+.footer button:last-child {
+  margin-left: auto;
+}
